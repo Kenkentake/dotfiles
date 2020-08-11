@@ -15,7 +15,9 @@ nnoremap k gk
 syntax enable
 
 
+set expandtab
 set ignorecase
+set incsearch
 set wrapscan
 set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
