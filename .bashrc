@@ -1,6 +1,7 @@
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -al'
+alias p='python'
 alias sssl='ssh synapse2_lab'
 alias sssr='ssh synapse2_remote'
 alias sscl='ssh takemoto@cluster'
