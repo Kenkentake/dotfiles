@@ -14,6 +14,6 @@ alias vb='v ~/.bashrc; source ~/.bashrc'
 export EDITOR=vim
 set -o vi
 
-HISTSIZE=5000
-HISTFILESIZE=5000
+HISTSIZE=100000
+HISTFILESIZE=100000
 HISTTIMEFORMAT='%Y/%m/%d %H:%M:%S '
