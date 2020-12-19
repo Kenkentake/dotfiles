@@ -1,60 +1,45 @@
-"dein Scripts-----------------------------
 if &compatible
-  set nocompatible               " Be iMproved
+   set nocompatible
 endif
-
-" Required:
-set runtimepath+=/Users/kentakemoto/.cache/dein/repos/github.com/Shougo/dein.vim
-
-" Required:
-if dein#load_state('/Users/kentakemoto/.cache/dein')
-  call dein#begin('/Users/kentakemoto/.cache/dein')
-
-  " Let dein manage dein
-  " Required:
-  call dein#add('/Users/kentakemoto/.cache/dein/repos/github.com/Shougo/dein.vim')
-
-  " Add or remove your plugins here like this:
-  call dein#add("cohama/lexima.vim")
-  call dein#add("sainnhe/sonokai")
-  
-  " Required:
+set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
+if dein#load_state('~/.vim/dein')
+  call dein#begin(expand('~/.vim/dein'))
+  "Pligins
+  call dein#add('Shougo/dein.vim')
+  "lexima
+  call dein#add('cohama/lexima.vim')
+  "molokai
+  call dein#add('tomasr/molokai')
   call dein#end()
   call dein#save_state()
 endif
-
-" Required:
 filetype plugin indent on
 syntax enable
-
-" If you want to install not installed plugins on startup.
-"if dein#check_install()
-"  call dein#install()
-"endif
-
-"End dein Scripts-------------------------
-
-set termguicolors
-colorscheme sonokai
-
-set fenc=utf-8
-set nobackup
-set autoread
-set hidden
-set showcmd
-
+"install plugins
+if dein#check_install()
+   call dein#install()
+endif
+"molokai
+let g:molokai_original=1
+colorscheme molokai
+set t_Co=256
+"{{{ Edit setting
 set number
-set virtualedit=onemore
+set autoindent
 set smartindent
-set showmatch
-set laststatus=2
-set wildmode=list:longest
-nnoremap j gj
-nnoremap k gk
-
 set expandtab
-set ignorecase
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set backspace=indent,eol,start
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+"}}}
+"
+"{{{ Search setting
 set incsearch
-set wrapscan
-set hlsearch
-nmap <Esc><Esc> :nohlsearch<CR><Esc>
+set ignorecase
+set smartcase
+"}}}
