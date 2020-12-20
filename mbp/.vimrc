@@ -31,14 +31,18 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
+set showcmd
 set backspace=indent,eol,start
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
+nnoremap j gj
+nnoremap k gk
 "}}}
 "
 "{{{ Search setting
+set hlsearch
 set incsearch
 set ignorecase
 set smartcase
