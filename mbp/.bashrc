@@ -107,12 +107,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
+alias c='clear'
+
 # dokcer 
 alias d='docker'
-alias di = 'docker images'
-alias dp = 'docker ps'
-alias dpa = 'dpa'
-alias ds = 'docker stop'
+alias di='docker images'
+alias dp='docker ps'
+alias dpa='dpa'
+alias ds='docker stop'
 # git
 alias g='git'
 alias ga='git add'
@@ -138,9 +140,12 @@ alias ssc='ssh -p 48262 duser@192.168.0.172'
 alias ssp='ssh pansy'
 alias ssd='ssh daisy'
 alias ssds='ssh DGX-station'
+# tmux
+alias t='tmux'
 # vim
 alias v='vim'
 alias vb='vim ~/.bashrc; source ~/.bashrc'
+alias vt='vim ~/.tmux.conf'
 alias vv='vim ~/.vimrc'
 
 export EDITOR=vim
