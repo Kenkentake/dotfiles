@@ -2,7 +2,7 @@ if &compatible
    set nocompatible
 endif
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
-if dein#load_state('/home/ktakemoto/.vim/dein')
+if dein#load_state('~/.vim/dein')
   call dein#begin(expand('~/.vim/dein'))
   "Pligins
   call dein#add('Shougo/dein.vim')
@@ -31,13 +31,13 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set showcmd
 set backspace=indent,eol,start
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
 "}}}
+"
 "{{{ Search setting
 set hlsearch
 set incsearch
@@ -45,8 +45,3 @@ set ignorecase
 set smartcase
 nnoremap <ESC><ESC> :noh<CR>
 "}}}
-
-nnoremap j gj
-nnoremap k gk
-nnoremap <Down> gj
-nnoremap <Up>   gk
