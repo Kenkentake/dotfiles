@@ -28,12 +28,12 @@
     },
     // explorer: toggle
     {
-        "key": "ctrl+s ctrl+k",
+        "key": "ctrl+k",
         "command": "workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
     },
     {
-        "key": "ctrl+s ctrl+k",
+        "key": "ctrl+k",
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "filesExplorerFocus"
     },
