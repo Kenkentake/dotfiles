@@ -88,6 +88,16 @@
                 "workbench.view.explorer"
             ]
         },
+        {
+            "before": [
+                "<Space>",
+                "v",
+                "s"
+            ],
+            "commands": [
+                ":vsplit"
+            ]
+        },
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         // cursor moving
@@ -151,4 +161,7 @@
         ]
     },
     "workbench.startupEditor": "none",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "editor.selectionHighlight": false,
+    "editor.lightbulb.enabled": false,
 }
