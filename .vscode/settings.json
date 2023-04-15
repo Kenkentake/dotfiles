@@ -164,4 +164,6 @@
     "terminal.integrated.enableMultiLinePasteWarning": false,
     "editor.selectionHighlight": false,
     "editor.lightbulb.enabled": false,
+    "editor.inlineSuggest.enabled": true,
+    "editor.cursorBlinking": "phase",
 }
