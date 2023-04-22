@@ -129,4 +129,12 @@
         "command": "-editor.action.joinLines",
         "when": "editorTextFocus && !editorReadonly"
     },
+    {
+        "key": "ctrl+j v",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "cmd+k cmd+\\",
+        "command": "-workbench.action.splitEditorRight"
+    },
 ]
