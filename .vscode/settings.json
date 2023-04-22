@@ -98,6 +98,22 @@
                 ":vsplit"
             ]
         },
+        {
+            "before": [
+                "u"
+            ],
+            "commands": [
+                "undo"
+            ]
+        },
+        {
+            "before": [
+                "c-r"
+            ],
+            "commands": [
+                "redo"
+            ]
+        }
     ],
     "vim.visualModeKeyBindingsNonRecursive": [
         // cursor moving
@@ -135,7 +151,6 @@
         },
     ],
     "vim.leader": "<space>",
-    "window.zoomLevel": 0,
     "git.confirmSync": false,
     "[python]": {
         "editor.formatOnType": true
@@ -166,4 +181,21 @@
     "editor.lightbulb.enabled": false,
     "editor.inlineSuggest.enabled": true,
     "editor.cursorBlinking": "phase",
+    "editor.fontSize": 13.5,
+    "workbench.colorTheme": "Dracula",
+    "vim.statusBarColorControl": true,
+    "vim.statusBarColors.normal": "#420c59",
+    "vim.statusBarColors.insert": "#BD93F9",
+    "vim.statusBarColors.visual": "#FF79C6",
+    "vim.statusBarColors.visualline": "#FF79C6",
+    "vim.statusBarColors.visualblock": "#FF79C6",
+    "vim.statusBarColors.replace": "#a5382c",
+    // "vim.statusBarColors.searchinprogressmode": "#79279c",
+    "vim.statusBarColors.searchinprogressmode": "#8922b5",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#420c59",
+        "statusBar.noFolderBackground": "#420c59",
+        "statusBar.debuggingBackground": "#420c59"
+    },
+    "window.zoomLevel": -1,
 }
