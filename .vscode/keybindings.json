@@ -19,7 +19,7 @@
         "command": "workbench.action.navigateRight"
     },
     {
-        "key": "ctrl+k",
+        "key": "ctrl+j k",
         "command": "workbench.action.navigateUp"
     },
     {
@@ -117,7 +117,7 @@
         "command": "workbench.action.terminal.focus"
     },
     {
-        "key": "ctrl+j k",
+        "key": "ctrl+k",
         "command": "workbench.action.focusAboveGroup"
     },
     {
