@@ -28,7 +28,7 @@
     },
     // explorer: toggle
     {
-        "key": "ctrl+e",
+        "key": "cmd+e",
         "command": "workbench.view.explorer",
         "when": "viewContainer.workbench.view.explorer.enabled"
     },
@@ -136,5 +136,18 @@
     {
         "key": "cmd+k cmd+\\",
         "command": "-workbench.action.splitEditorRight"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "actions.findWithSelection"
+    },
+    {
+        "key": "cmd+e",
+        "command": "-actions.findWithSelection"
     },
 ]
