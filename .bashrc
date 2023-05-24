@@ -111,6 +111,7 @@ alias c='clear'
 
 # dokcer 
 alias d='docker'
+alias da='./docker/attach.sh'
 alias di='docker images'
 alias dp='docker ps'
 alias dpa='dpa'
@@ -121,19 +122,24 @@ alias ga='git add'
 alias gb='git branch'
 alias gch='git checkout'
 alias gcm='git commit'
+alias gd='git diff'
+alias gf='git fetch'
 alias gs='git status'
 alias gl='git log --graph --all --format="%x09%C(cyan bold)%an%Creset%x09%C(yellow)%h%Creset %C(magenta reverse)%d%Creset %s"'
 alias gp='git push -f'
 alias grv='git remote -v'
 alias gsm='git submodule'
 alias gt='git tree'
+
+alias ic='~/imgcat'
 # ls
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -al'
 alias lt='ls -lrt'
 # others
-alias nv='nvidia-smi'
+alias imgcat='~/imgcat'
+alias nv='watch nvidia-smi'
 alias p='python'
 # ssh
 alias ssc='ssh -p 48262 duser@192.168.0.172'
