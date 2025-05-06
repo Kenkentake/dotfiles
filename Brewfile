@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 brew "act"
 brew "bat"
 brew "btop"
