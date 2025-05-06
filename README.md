@@ -24,4 +24,5 @@ chezmoi init --apply Kenkentake
 Through paths as needed
 ```
 echo 'export PATH="$HOME/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
 ```
