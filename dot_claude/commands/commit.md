@@ -18,7 +18,7 @@
 4. `git diff`を実行してコミットされる変更内容を理解してください
 5. diff を分析して、複数の異なる論理的変更が含まれているかを判定します
 6. もし複数の論理的変更がある場合、それらを別々のコミットに分割してください
-7. 各コミット（または分割されない場合は単一のコミット）に対して、emoji を利用した conventional commit 形式を使用してコミットメッセージを作成
+7. 各コミット（または分割されない場合は単一のコミット）に対して、emoji を利用した conventional commit 形式を使用してコミットメッセージを英語で作成
 8. コミットを実行し、pre-commit チェックが失敗した場合は問題を修正してください　
 
 ## 重要な注意事項
@@ -73,20 +73,20 @@ diff を分析する際、以下の基準に基づいてコミットの分割を
 
 良いコミットメッセージ：
 
-- ✨ feat: cloud run のサービスアカウントを追加
-- 🐛 fix: llm の推論タイムアウト時間を変更
-- 📝 docs: exp002 の実験に関するドキュメントを記載
-- 💄 style: 読みやすさ向上のためにコンポーネント構造を再編成
-- ♻️ refactor: パーサーのエラーハンドリングロジックを簡素化
-- 🔧 chore: 開発者ツールのセットアッププロセスを改善
+- ✨ feat: Add Cloud Run service account
+- 🐛 fix: Change LLM inference timeout duration
+- 📝 docs: Add documentation for experiment exp002
+- 💄 style: Reorganize component structure for better readability
+- ♻️ refactor: Simplify error handling logic in the parser
+- 🔧 chore: Improve setup process for developer tools
 
 コミット分割の例：
 
-- 1 つ目のコミット: ✨ feat: 新しい solc バージョンの型定義を追加
-- 2 つ目のコミット: 📝 docs: 新しい solc バージョンのドキュメントを更新
-- 3 つ目のコミット: 🔧 chore: package.json の依存関係を更新
-- 4 つ目のコミット: ✨ feat: 新しい API エンドポイントの型定義を追加
-- 5 つ目のコミット: ✨ feat: ワーカースレッドの並行性処理を改善
-- 6 つ目のコミット: 🐛 fix: 新しいコードのリント問題を解決
-- 7 つ目のコミット: ✅ test: 新しい solc バージョン機能のユニットテストを追加
-- 8 つ目のコミット: 🐛 fix: セキュリティ脆弱性のある依存関係を更新
+- 1つ目のコミット: ✨ feat: Add type definitions for the new solc version
+- 2つ目のコミット: 📝 docs: Update documentation for the new solc version
+- 3つ目のコミット: 🔧 chore: Update dependencies in package.json
+- 4つ目のコミット: ✨ feat: Add type definitions for the new API endpoint
+- 5つ目のコミット: ✨ feat: Improve concurrency handling with worker threads
+- 6つ目のコミット: 🐛 fix: Resolve linting issues in the new code
+- 7つ目のコミット: ✅ test: Add unit tests for new solc version features
+- 8つ目のコミット: 🐛 fix: Update dependencies with security vulnerabilities
