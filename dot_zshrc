@@ -11,6 +11,9 @@ if [ -f "/usr/lib/google-cloud-sdk/completion.bash.inc" ]; then
   source "/usr/lib/google-cloud-sdk/completion.bash.inc"
 fi
 
+# マッチしないglobパターンをそのままのリテラル文字列として扱う（展開せずにそのまま引数として渡す）
+setopt nonomatch
+
 # z setting
 . `brew --prefix`/etc/profile.d/z.sh
 
