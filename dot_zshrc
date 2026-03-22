@@ -155,3 +155,9 @@ fi
 # claudeの設定ファイルのディレクトリを指定
 alias claude='env CLAUDE_CONFIG_DIR=$HOME/.claude claude'
 alias c='claude'
+
+# gemini cli
+export GOOGLE_GENAI_USE_VERTEXAI=true
+export GOOGLE_CLOUD_PROJECT="caddi-ai-tools-dev"
+export GOOGLE_CLOUD_LOCATION="us-east5"
+export GEMINI_MODEL="gemini-2.5-pro"
