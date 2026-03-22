@@ -3,6 +3,7 @@
   "editorMode": "vscode",
   "respectGitignore": true,
   "detectSecrets": true,
+  "language": "japanese",
   "permissions": {
     "allow": [
       "Bash",
